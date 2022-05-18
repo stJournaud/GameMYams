@@ -1,0 +1,11 @@
+extends ../layouts/frontend.pug
+
+block content
+    h1 REGISTRER 
+    form(action="/register", method="post")
+        input(type="text", name="firstname", placeholder="NON :")
+        input(type="text", name="lastname", placeholder="PRAINON :")
+        input(type="mail", name="mail", placeholder="MEIL :")
+        input(type="password", name="password", placeholder="MAUX 2 path :")
+        input(type="password", name="password", placeholder="Konfirm m2p :")
+        button.btn.btn-primary(type="submit") Saints-crir
